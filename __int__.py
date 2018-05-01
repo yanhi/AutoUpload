@@ -1,4 +1,4 @@
-#This program is for uploading file update database and add blueprint automatically
+#This program is for uploading file update database and add watermark automatically
 #Created Date: Thu 09:46 April 19 2018 By HAIYAN
 import  os
 import psycopg2
@@ -28,7 +28,7 @@ if(os.path.exists(str)):
         add choosentype to database please!
         
         """
-
+        
         cur=conn.cursor()
         cur.execute("SELECT * FROM cctdatas")
         rows = cur.fetchall()
@@ -47,11 +47,6 @@ if(os.path.exists(str)):
         for x in typenumlist:
             paihaolist = []
             os
-
-
-
-
-
 
         uploaddir = os.path.join(str,choosentype)       ## Upload directory
         if os.path.exists(uploaddir):
