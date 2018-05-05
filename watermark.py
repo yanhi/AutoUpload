@@ -3,7 +3,7 @@ import os.path
 from PIL import Image, ImageDraw, ImageFont
 import math
 
-rootdir = '/Users/yan/Downloads/cct'
+rootdir = '/Users/yan/Downloads/done'
 imagenamelist=[]
 for parent,dirnames,filenames in os.walk(rootdir):
     for filename in filenames:
